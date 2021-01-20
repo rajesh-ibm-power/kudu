@@ -24,7 +24,7 @@ script:
     - cmake ../..
     - make -j8
     - cd build/debug
-    - cmake -DNO_TESTS=1 ../..  
+    - cmake ../..  
     - cd build/debug
     - ctest -j8
 cache:
