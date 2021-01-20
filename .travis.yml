@@ -18,6 +18,15 @@ env:
 
 sudo: false
 
+script:
+    - mkdir -p build/debug
+    - cd build/debug
+    - cmake ../..
+    - make -j8
+    - cd build/debug
+    - cmake -DNO_TESTS=1 ../..  
+    - cd build/debug
+    - ctest -j8
 cache:
   directories:
     - $HOME/.m2
