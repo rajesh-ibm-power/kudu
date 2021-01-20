@@ -1,10 +1,12 @@
-
 language: java
+jdk:
+  - openjdk11
+  
+dist: xenial
+
 arch:
   - amd64
   - ppc64le
-jdk:
-  - oraclejdk8
 
 env:
   - MAVEN_OPTS="-Xmx4096m -XX:MaxPermSize=128m" HADOOP_VERSION="2.4.1"
