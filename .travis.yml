@@ -22,11 +22,11 @@ script:
     - mkdir -p build/debug
     - cd build/debug
     - cmake ../..
-    - make -j8
+    - make 
     - cd build/debug
     - cmake ../..  
     - cd build/debug
-    - ctest -j8
+    - ctest 
 cache:
   directories:
     - $HOME/.m2
